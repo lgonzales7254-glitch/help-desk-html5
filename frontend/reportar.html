@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidencia - Help Desk</title>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Help Desk</h1>
+        <p>Crear un nuevo ticket</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar Ticket</a></li>
+            <li><a href="tickets.html">Ver Tickets</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Formulario de Reporte</h2>
+            <form action="#" method="POST">
+                <label for="titulo">Título del problema:</label>
+                <input type="text" id="titulo" name="titulo" required placeholder="Breve resumen">
+                
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Seleccione...</option>
+                    <option value="hardware">Hardware</option>
+                     <option value="software">Software</option>
+                    <option value="redes">Redes</option>
+                </select>
+
+                <label for="descripcion">Descripción detallada:</label>
+                <textarea id="descripcion" name="descripcion" rows="5" required placeholder="Detalle el inconveniente"></textarea>
+
+                <button type="submit">Enviar Ticket</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 - Help Desk</p>
+    </footer>
+</body>
+</html>  
